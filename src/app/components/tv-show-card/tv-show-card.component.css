@@ -1,0 +1,13 @@
+
+.content{
+    padding: 16px;
+    margin: 0px;
+  }
+
+  div.content.ng-star-inserted[style]{
+    margin: 0px !important;
+  }
+
+  img:first-child{
+    margin-top: 0px;
+  }

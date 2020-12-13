@@ -1,0 +1,18 @@
+<div class="content" fxLayout="row wrap" fxLayoutGap="16px grid" *ngIf="tvShow">
+    <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let tvShow of tvShow.results">
+      <mat-card class="mat-elevation-z4" >
+        <mat-card-header>
+          <mat-card-title>{{tvShow.name}}</mat-card-title>
+        </mat-card-header>
+        
+        <a [routerLink] = "tvShow.id">
+          <img mat-card-image src='https://image.tmdb.org/t/p/w185{{tvShow.poster_path}}'>
+        </a>
+
+        <mat-card-actions>
+          <button mat-button><mat-icon>favorite</mat-icon></button>
+          <button mat-button><mat-icon>share</mat-icon></button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>

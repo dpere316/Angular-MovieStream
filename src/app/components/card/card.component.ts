@@ -18,7 +18,7 @@ export class CardComponent implements OnInit {
 
     return this.movieService.getMovie().subscribe((data) => {
       this.movie = data;
-      console.warn('res' , this.movie);
+      console.warn('movies' , this.movie);
     });
 
   }

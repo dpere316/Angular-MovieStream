@@ -10,6 +10,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { CardComponent } from './components/card/card.component';
 import {HttpClientModule} from '@angular/common/http';
 import { CardDetailComponent } from './components/card-detail/card-detail.component';
+import { TvShowCardComponent } from './components/tv-show-card/tv-show-card.component';
+import { FooterComponent } from './components/layout/footer/footer.component';
 
 
 
@@ -19,7 +21,9 @@ import { CardDetailComponent } from './components/card-detail/card-detail.compon
     HeaderComponent,
     AboutComponent,
     CardComponent,
-    CardDetailComponent
+    CardDetailComponent,
+    TvShowCardComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

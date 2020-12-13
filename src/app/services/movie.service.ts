@@ -9,11 +9,16 @@ import { Observable } from 'rxjs';
 export class MovieService {
 
   movieUrl = 'https://api.themoviedb.org/3/movie/popular?api_key=99014c3970c401e157b58c33cd0e7423&language=en-US&page=1';
+  tvUrl = 'https://api.themoviedb.org/3/tv/popular?api_key=99014c3970c401e157b58c33cd0e7423&language=en-US&page=1';
 
   constructor(private http: HttpClient) { }
 
   getMovie(): Observable<Movies[]> {
 
     return this.http.get<Movies[]>(this.movieUrl);
+  }
+
+  getTvShows (){
+    return this.http.get(this.tvUrl);
   }
 }
