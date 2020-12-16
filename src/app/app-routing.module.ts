@@ -16,12 +16,16 @@ const routes: Routes = [
     component: CardComponent
   },
   {
-    path: 'movie:id',
+    path: 'movies/:id',
     component: CardDetailComponent
   },
   {
     path: 'tvshows',
     component: TvShowCardComponent
+  },
+  {
+    path:'tvshows/:id',
+    component: CardDetailComponent
   }
 
 ];

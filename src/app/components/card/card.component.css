@@ -6,6 +6,12 @@ img:first-child{
   margin-top: 0px;
 }
 
+
 div.content.ng-star-inserted[style]{
   margin: 0px !important;
+}
+
+mat-card {
+  margin-top: 7vh;
+  margin-bottom: 6vh;
 }

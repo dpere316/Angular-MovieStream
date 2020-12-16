@@ -11,3 +11,8 @@
   img:first-child{
     margin-top: 0px;
   }
+
+  mat-card {
+    margin-top: 7vh;
+    margin-bottom: 6vh;
+  }

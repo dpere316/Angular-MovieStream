@@ -1,18 +1,20 @@
-<div class="content" fxLayout="row wrap" fxLayoutGap="16px grid" *ngIf="movie">
+<div class="content" fxLayout="row wrap" fxLayoutGap="16px grid" *ngIf="movie"  [style.margin-top]="'12vh'">
     <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let movie of movie.results" >
-      <mat-card class="mat-elevation-z4" >
-        <mat-card-header>
-          <mat-card-title>{{movie.title}}</mat-card-title>
-        </mat-card-header>
-        
-        <a [routerLink] = "movie.id">
-          <img mat-card-image src='https://image.tmdb.org/t/p/w185{{movie.poster_path}}'>
-        </a>
+      <div class="spacing">
+        <mat-card class="mat-elevation-z4" >
+          <mat-card-header>
+            <mat-card-title>{{movie.title}}</mat-card-title>
+          </mat-card-header>
+          
+          <a routerLink = "/movies/{{movie.id}}">
+            <img mat-card-image src='https://image.tmdb.org/t/p/w185{{movie.poster_path}}'>
+          </a>
 
-        <mat-card-actions>
-          <button mat-button><mat-icon>favorite</mat-icon></button>
-          <button mat-button><mat-icon>share</mat-icon></button>
-        </mat-card-actions>
-      </mat-card>
+          <mat-card-actions>
+            <button mat-button><mat-icon>favorite</mat-icon></button>
+            <button mat-button><mat-icon>share</mat-icon></button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
     </div>
   </div>
